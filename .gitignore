@@ -2,3 +2,6 @@
 .vscode
 *.iml
 .idea
+maxboostrom-craft-demo/client/node_modules
+maxboostrom-craft-demo/server/node_modules
+maxboostrom-craft-demo/node_modules

@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client",
+    "e2e"
+  ],
+  "scripts": {
+    "build:client": "yarn workspace craft-demo-client build",
+    "dev": "yarn workspace craft-demo-server dev",
+    "dev:debug": "yarn workspace craft-demo-server dev:debug",
+    "heroku-postbuild": "yarn workspace craft-demo-client build",
+    "start": "yarn workspace craft-demo-server start",
+    "dev:cypress": "yarn workspace craft-demo-server dev:e2e",
+    "e2e:open": "yarn workspace craft-demo-e2e e2e:open",
+    "e2e:run": "yarn workspace craft-demo-e2e e2e:run"
+  },
+  "engines": {
+    "node": "^14.19"
+  }
+}

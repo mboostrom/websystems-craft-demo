@@ -1,0 +1,225 @@
+$black: #000000;
+$white: #ffffff;
+$asparagus: #82934b;
+$carrot: #ef9421;
+$chrome: #e2edd7;
+$dune: #363432;
+$elm: #1a6874;
+$geraldine: #f79b82;
+$picton-blue: #47c5e0;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.park-tile-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 30px;
+  width: 95%;
+  margin: auto;
+  margin-top: 100px;
+  justify-content: center;
+}
+
+.park-tile {
+  border: 1px solid $dune;
+  height: 750px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 16px;
+  position: relative;
+}
+
+.natural {
+  height: 75px;
+  width: 100%;
+  background-color: $asparagus;
+  color: $black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.historical {
+  height: 75px;
+  width: 100%;
+  background-color: $carrot;
+  color: $black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.monument {
+  height: 75px;
+  width: 100%;
+  background-color: $elm;
+  color: $black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 15px;
+  color: $white;
+}
+
+.category {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.park-image {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.naturalTitle {
+  margin: 15px;
+  margin-bottom: 0 !important;
+  font-size: 36px;
+  font-weight: bold;
+  color: $asparagus;
+}
+
+.historicalTitle {
+  margin: 15px;
+  margin-bottom: 0 !important;
+  font-size: 36px;
+  font-weight: bold;
+  color: $carrot;
+}
+
+.monumentTitle {
+  margin: 15px;
+  margin-bottom: 0 !important;
+  font-size: 36px;
+  font-weight: bold;
+  color: $elm;
+}
+
+.body {
+  margin: 15px;
+  line-height: 25px;
+}
+
+.naturalLink {
+  height: 50px;
+  width: 150px;
+  background-color: $asparagus;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: $black;
+  font-weight: bold;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.naturalLink:hover {
+  background-color: $elm;
+  color: $white;
+}
+
+.historicalLink {
+  height: 50px;
+  width: 150px;
+  background-color: $carrot;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: $black;
+  font-weight: bold;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.historicalLink:hover {
+  background-color: $geraldine;
+}
+
+.monumentLink {
+  height: 50px;
+  width: 150px;
+  background-color: $elm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: $white;
+  font-weight: bold;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.monumentLink:hover {
+  background-color: $asparagus;
+  color: $black;
+}
+
+.empty-link {
+  display: none;
+}
+
+@media (max-width: 885px) {
+  .park-tile {
+    height: 700px;
+  }
+
+  .natural {
+    height: 50px;
+  }
+
+  .historical {
+    height: 50px;
+  }
+
+  .monument {
+    height: 50px;
+  }
+
+  .category {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .naturalTitle {
+    font-size: 24px;
+  }
+
+  .historicalTitle {
+    font-size: 24px;
+  }
+
+  .monumentTitle {
+    font-size: 24px;
+  }
+}
